@@ -1,0 +1,50 @@
+@use 'global/variables' as v;
+@use 'global/mixins' as m;
+
+.nosotros{
+    color: v.$White;
+    padding: 1rem;
+    
+    .nosotros__texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            padding: 1rem;
+            @include m.desktop{
+                text-justify: inter-word;
+                width: 50%;
+            }
+        }
+    }
+
+    .nosotros__misionVision{
+        display: flex;
+        flex-direction: column;
+
+        @include m.desktop{
+            flex-direction: row;
+        }
+        .nosotros__misionVision--item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img{
+                width: 13rem;
+            }
+
+            p{
+                
+                text-justify: inter-word;
+            }
+        }
+    }
+}
