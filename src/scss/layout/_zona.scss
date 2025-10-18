@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-
+  margin-top: 4rem;
   @include m.desktop{
     display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -27,8 +27,8 @@
 }
 
 .Zona__mapa{
-  width: 40rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   @include m.desktop{
     height: auto;
     width: 70rem;

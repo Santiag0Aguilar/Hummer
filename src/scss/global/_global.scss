@@ -55,10 +55,23 @@ img {
 } 
 
 
-.proyectos, .nosotros{
+.proyectos{
     background-color: v.$DarkBlue;
 }
 
 .nombre{
     font-weight: bold;
+}
+.centrar__texto{
+    text-align: center;
+} 
+
+.enlace__active{
+    opacity: .5;
+}
+
+a{
+    &:hover{
+        opacity: .5;
+    }
 }
